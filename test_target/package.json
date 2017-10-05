@@ -1,0 +1,38 @@
+{
+  "name": "test_target",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "mocha --recursive -r ts-node/register test/**/*.ts",
+    "start": "ts-node src/index.ts",
+    "watch": "tsc -w",
+    "build": "tsc",
+    "doc": "typedoc --mode file --out docs/ src/index.ts"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "*"
+  },
+  "devDependencies": {
+    "@types/chai": "*",
+    "@types/es6-promise": "*",
+    "@types/jsdom": "*",
+    "@types/lodash": "*",
+    "@types/mocha": "*",
+    "@types/node": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "@types/typescript": "*",
+    "chai": "*",
+    "jsdom": "*",
+    "laravel-mix": "*",
+    "mocha": "*",
+    "react": "*",
+    "react-dom": "*",
+    "ts-node": "*",
+    "typedoc": "*",
+    "typescript": "*"
+  }
+}

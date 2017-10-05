@@ -1,0 +1,29 @@
+{
+  "name": "generator-ts-quickstart",
+  "version": "0.1.0",
+  "description": "A yeoman generator for both Node and Web applications using Typescript",
+  "scripts": {
+    "start": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Olian04/generator-ts-quickstart.git"
+  },
+  "author": "Olian04",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Olian04/generator-ts-quickstart/issues"
+  },
+  "homepage": "https://github.com/Olian04/generator-ts-quickstart#readme",
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "@types/yeoman-generator": "^1.0.3",
+    "generator-npm-init": "^1.4.0",
+    "yeoman-generator": "^1.0.0"
+  }
+}
