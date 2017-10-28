@@ -1,14 +1,18 @@
 const Generator = require('yeoman-generator');
 const fs = require('fs');
+const { join } = require('path');
 
-function mkdir(dir) {
+const isDirectory = source => 
+    fs.lstatSync(source).isDirectory();
+const getDirectories = source => 
+    fs.readdirSync(source).map(name => join(source, name)).filter(isDirectory).map(uri => uri.substring(uri.lastIndexOf('/')+1));
+
+    function mkdir(dir) {
     if (!fs.existsSync(dir)){
         fs.mkdirSync(dir);
     }
 }
-
-let chosenEnv = {};
-
+  
 module.exports = class extends Generator {
     selectMode() {
         return this.prompt([
@@ -16,10 +20,7 @@ module.exports = class extends Generator {
                 type: 'list',
                 name: 'type',
                 message : 'project type:',
-                choices: [
-                    'node_package',
-                    'web_spa'
-                ],
+                choices: getDirectories(this.sourceRoot()),
                 default : 'node_package'
               }
         ]).then(answers => {
@@ -32,6 +33,7 @@ module.exports = class extends Generator {
     }
 
     npm() {
+        // This needs to be the last method since it uses the current package.json as its start point
         this.composeWith(require.resolve('generator-npm-init/app'));
     }
 };
