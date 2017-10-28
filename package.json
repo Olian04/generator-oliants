@@ -1,7 +1,7 @@
 {
-  "name": "generator-ts-quickstart",
-  "version": "0.1.0",
-  "description": "A yeoman generator for both Node and Web applications using Typescript",
+  "name": "generator-oliants",
+  "version": "0.2.0",
+  "description": "An opinionated yeoman generator for Typescript aplications",
   "scripts": {
     "start": ""
   },
