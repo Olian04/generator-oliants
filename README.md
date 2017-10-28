@@ -1,5 +1,7 @@
 # generator-ts-quickstart
-A yeoman generator for both Node and Web applications using Typescript
+An opinionated yeoman generator for Typescript aplications
+
+TODO: change name, ex: `generator-oliants` _(olian ts)_
 
 ## Modes
 - [ ] [Node - CLI](https://en.wikipedia.org/wiki/Command-line_interface)
