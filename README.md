@@ -5,7 +5,7 @@ An opinionated yeoman generator for Typescript aplications
 - [ ] Node - CLI
 - [ ] Node - Server
 - [x] _(1.0)_ [Node - Package](generators/app/templates/node_package)
-- [ ] Web - SPA
+- [x] _(0.1)_ [Web - SPA](generators/app/templates/web_spa)
 - [ ] Web - WPA
 - [ ] Web - Component
 - [ ] Extension - Chrome
