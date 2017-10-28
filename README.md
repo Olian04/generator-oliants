@@ -9,7 +9,7 @@ TODO: change name, ex: `generator-oliants` _(olian ts)_
 - [ ] Node - Package
 - [ ] [Web - SPA](https://en.wikipedia.org/wiki/Single-page_application)
 - [ ] [Web - WPA](https://developers.google.com/web/progressive-web-apps/)
-- [ ] [Web - Component]
+- [ ] Web - Component
 - [ ] [Extension - Chrome](https://developer.chrome.com/extensions)
 - [ ] [Extension - VS Code](https://code.visualstudio.com/docs/extensions/overview)
 - [ ] [Mobile - React-Native](https://facebook.github.io/react-native/)
