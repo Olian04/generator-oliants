@@ -15,13 +15,14 @@ const getDirectories = source =>
   
 module.exports = class extends Generator {
     selectMode() {
+        const choices = getDirectories(this.sourceRoot());
         return this.prompt([
             {
                 type: 'list',
                 name: 'type',
                 message : 'project type:',
-                choices: getDirectories(this.sourceRoot()),
-                default : 'node_package'
+                choices: choices,
+                default : choices[0]
               }
         ]).then(answers => {
             mkdir('docs');
